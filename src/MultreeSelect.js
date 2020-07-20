@@ -1,7 +1,7 @@
 import React from "react";
 import "antd/dist/antd.css";
 import { TreeSelect } from "antd";
-import DownIcon from "./down.svg";
+import DownIcon from "./down.js";
 import './App.css';
 
 const { SHOW_CHILD,SHOW_ALL } = TreeSelect;
@@ -62,7 +62,7 @@ class MultreeSelect extends React.Component {
           {...tProps}
           {...tProps}
         />
-        <img style={{position:'relative',top:size==='large' ? '-4px' : '2px',left:'-2%'}} alt={'i'} src={DownIcon}/>
+        <img style={{position:'relative',top:size==='large' ? '-4px' : '2px',left:'-2%'}} alt={'i'} src={<DownIcon/>}/>
         </div>
     
     );
