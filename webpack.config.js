@@ -1,11 +1,10 @@
 const path = require('path');
-
-var mode = process.env.NODE_ENV || 'development';
+var nodeExternals = require('webpack-node-externals');
 
 
 module.exports = {
-  devtool: (mode === 'development') ? 'inline-source-map' : false,
-  mode: mode,
+  devtool:  false,
+  mode: 'production',
   entry: './src/index.js',
   output: {
     path: path.resolve('lib'),
@@ -38,19 +37,21 @@ module.exports = {
       'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
     }
   },
-  externals: {
-    // Don't bundle react or react-dom      
-    react: {
-      commonjs: "react",
-      commonjs2: "react",
-      amd: "React",
-      root: "React"
-    },
-    "react-dom": {
-      commonjs: "react-dom",
-      commonjs2: "react-dom",
-      amd: "ReactDOM",
-      root: "ReactDOM"
-    }
-  }
+  target: 'node', // in order to ignore built-in modules like path, fs, etc. 
+    externals: [nodeExternals()],
+  // externals: {
+  //   // Don't bundle react or react-dom      
+  //   react: {
+  //     commonjs: "react",
+  //     commonjs2: "react",
+  //     amd: "React",
+  //     root: "React"
+  //   },
+  //   "react-dom": {
+  //     commonjs: "react-dom",
+  //     commonjs2: "react-dom",
+  //     amd: "ReactDOM",
+  //     root: "ReactDOM"
+  //   }
+  // }
 };
