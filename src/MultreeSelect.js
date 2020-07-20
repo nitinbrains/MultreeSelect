@@ -62,7 +62,8 @@ class MultreeSelect extends React.Component {
           {...tProps}
           {...tProps}
         />
-        <img style={{position:'relative',top:size==='large' ? '-4px' : '2px',left:'-2%'}} alt={'i'} src={<DownIcon/>}/>
+        {/* <img  style={{position:'relative',top:size==='large' ? '-4px' : '2px',left:'-2%'}} alt={'i'} src={<DownIcon/>}/> */}
+        <DownIcon style={{position:'relative',top:size==='large' ? '-4px' : '2px',left:'-2%'}}/>
         </div>
     
     );
