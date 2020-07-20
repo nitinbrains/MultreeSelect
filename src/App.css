@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+      font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+     -webkit-font-smoothing: antialiased;
+     line-height: normal;
+     font-weight: normal;
+     font-size: 14px;
+  }
+  
+.ant-select-tree-checkbox-checked .ant-select-tree-checkbox-inner {
+    background-color: #f1dca3 !important;
+    border: 1.5px solid #dca849 !important;
+  }
+  
+  .ant-select-tree-checkbox-checked .ant-select-tree-checkbox-inner::after {
+    border: 1.7px solid #dca849 !important;
+    transform: rotate(45deg) scale(1.1) translate(-50%, -50%) !important;
+    position: absolute !important;
+    display: table !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    opacity: 1 !important;
+    -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s !important;
+    transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s !important;
+  }
+  
+  .ant-select-tree-checkbox-indeterminate .ant-select-tree-checkbox-inner::after {
+    background-color: white !important;
+  }
+  
+  .ant-select-tree-checkbox-inner {
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 4px !important;
+    border: solid 2px #d8d8d8 !important;
+  }
+  
+  .ant-select-tree-checkbox-checked::after{
+    border: none !important;
+  }
+  
+  .ant-select-selection {
+    border: solid 1px #cfcfd4 !important;
+    border-color: #cfcfd4 !important;
+  }
+  
+  .ant-select-open .ant-select-selection {
+    box-shadow: none !important;
+  }
+  
+  .ant-select-focused .ant-select-selection {
+    box-shadow: none !important;
+  }
+  
+  .ant-select-selection--multiple .ant-select-selection__choice {
+    background-color: white !important;
+    border: none !important;
+    padding: 0 0px 0 10px !important;
+    margin-right: 0px !important;
+  }
+  
+  .ant-select-selection--multiple .ant-select-selection__choice__remove svg {
+    display: none !important;
+  }
+  
+  .ant-select-sm
+    .ant-select-selection--multiple
+    .ant-select-selection__rendered
+    li {
+    height: 23px !important;
+    line-height: 22px !important;
+  }
+  
+  .ant-select-sm .ant-select-selection--multiple {
+    min-height: 30px !important;
+    height: 30px !important;
+  }
+  
+  .ant-select-lg
+    .ant-select-selection--multiple
+    .ant-select-selection__rendered
+    li {
+    height: 30px !important;
+    line-height: 29px !important;
+  }
+  
+  .ant-select-lg .ant-select-selection--multiple {
+    min-height: 36px !important;
+    height: 36px !important;
+  }
+  
+  .ant-select-dropdown {
+    border-radius: 4px !important;
+    box-shadow: rgb(229, 229, 230) 0px 3px 4px 0px !important;
+  }
+  
