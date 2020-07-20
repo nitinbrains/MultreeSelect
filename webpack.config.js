@@ -25,10 +25,17 @@ module.exports = {
           'css-loader'
         ]
       },
-      {
-        test: /\.svg$/,
-        use: 'svg-inline-loader'
-    }
+    //   {
+    //     test: /\.svg$/,
+    //     use: 'svg-inline-loader'
+    // },
+    {
+      test: /\.svg$/,
+      use: 'react-svg-loader',
+      options: {
+        jsx: true // true outputs JSX tags
+      }
+  },
     ],
   },
   resolve: {

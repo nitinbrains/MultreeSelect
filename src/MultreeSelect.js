@@ -1,7 +1,7 @@
 import React from "react";
 import "antd/dist/antd.css";
 import { TreeSelect } from "antd";
-import DownIcon from "./down.js";
+import DownIcon from "./down.svg";
 import './App.css';
 
 const { SHOW_CHILD,SHOW_ALL } = TreeSelect;
