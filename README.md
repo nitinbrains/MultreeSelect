@@ -1,4 +1,4 @@
-> This project is created to use Dropdown Tree select in React. Powered by nitpedia (wwww.nitpedia.in)
+> This project is created to use Dropdown Tree select in React. Powered by nitpedia (www.nitpedia.in)
 
 ## Guide
 1. How to Use ? Here we go:
