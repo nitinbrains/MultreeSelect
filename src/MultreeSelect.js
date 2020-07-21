@@ -61,11 +61,7 @@ class MultreeSelect extends React.Component {
           {...tProps}
         />
         <DownIcon
-          style={{
-            position: "relative",
-            top: size === "large" ? "-4px" : "2px",
-            left: "-2%",
-          }}
+          classname={ size === "large" ? "down-icon-large" : "down-icon-small" }
         />
       </Fragment>
     );

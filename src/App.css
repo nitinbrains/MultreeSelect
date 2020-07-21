@@ -97,4 +97,16 @@ body {
     border-radius: 4px !important;
     box-shadow: rgb(229, 229, 230) 0px 3px 4px 0px !important;
   }
+
+  .down-icon-small{
+    position: relative;
+    left: -2%;
+    top: 2px;
+  }
+
+  .down-icon-large{
+    position: relative;
+    left: -2%;
+    top: -4px;
+  }
   
