@@ -47,7 +47,7 @@ module.exports = {
       'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
     }
   },
-  target: 'node', // in order to ignore built-in modules like path, fs, etc. 
+  target: 'node', // in order to ignore builtin modules like path, fs, etc. 
    // externals: [nodeExternals()],
   externals :[
     {

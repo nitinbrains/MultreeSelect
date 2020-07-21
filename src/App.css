@@ -51,9 +51,13 @@ body {
   .ant-select-focused .ant-select-selection {
     box-shadow: none !important;
   }
+
+  .ant-select-focused .ant-select-selection, .ant-select-selection:focus, .ant-select-selection:active{
+    background: #f6f6f7 !important;
+  }
   
   .ant-select-selection--multiple .ant-select-selection__choice {
-    background-color: white !important;
+    background: none !important;
     border: none !important;
     padding: 0 0px 0 10px !important;
     margin-right: 0px !important;
